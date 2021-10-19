@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ingresar</title>
 </head>
 <body>
-    Hola mundo
+    <form action="/login" method="POST" class="form">
+        <ul>
+            <li> <label for="nombredeusuario">Nombre de Usuario:</label>
+                <input type="text" name="nombredeusuario" id="nombredeusuario">
+                <span class="feedback"></span>
+            </li>
+
+            <li><label for="contrasena">Contraseña:</label>
+                <input type="password" name="contrasena" id="contrasena">
+                <span class="feedback"></span>
+            </li>
+        </ul>
+        <input type="submit" value="Enviar">
+    </form>
+   
 </body>
 </html>

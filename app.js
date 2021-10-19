@@ -11,10 +11,11 @@ app.get('/login', (req, res)=> {
     res.sendFile(path.join(__dirname, './views/login.html'));
 });
 
-app.get(('/registro'), (req, res) =>{
-    res.sendFile(path.join(__dirname, '/views/register.html'));
+app.get(('/register'), (req, res) =>{
+    res.sendFile(path.join(__dirname, './views/register.html'));
 
 })
 
 
 app.listen(port, ()=> console.log(`Servidor corriendo ${port}`))
+

@@ -4,25 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Formulario registro</title>
 </head>
 <body>
     <form action="/register" method="POST" class="form">
         <ul>
             <li> <label for="nombreyapellido">Nombre y Apellido:</label>
                 <input type="text" name="nombreyapellido" id="nombreyapellido">
+                <span class="feedback"></span>
             </li>
 
             <li><label for="nombredeusuario">Nombre de Usuario:</label>
                 <input type="text" name="nombredeusuario" id="nombredeusuario">
+                <span class="feedback"></span>
             </li>
 
             <li> <label for="fechadenacimiento">Fecha de nacimiento:</label>
                 <input type="date" name="fechadenacimiento" id="fechadenacimiento">
+                <span class="feedback"></span>
             </li>
 
             <li> <label for="domicilio">Direccion:</label>
                 <input type="text" name="domicilio" id="domicilio">
+                <span class="feedback"></span>
             </li>
         </ul>
         <ul>
@@ -38,6 +44,9 @@
             <li> <input type="checkbox" name="categoriadeinteres" value="Jugueteria">Jugueteria</li>
             <li> <input type="checkbox" name="categoriadeinteres" value="Vida Sana">vida Sana</li>
         </ul>
+       <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
+       <input type="submit" value="Reagistrar">
+       <p><a href="#">¿Ya tengo cuenta?</a></p>
 
     </form> 
 </body>
