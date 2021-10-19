@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/register" method="POST" class="form">
+        <ul>
+            <li> <label for="nombreyapellido">Nombre y Apellido:</label>
+                <input type="text" name="nombreyapellido" id="nombreyapellido">
+            </li>
+
+            <li><label for="nombredeusuario">Nombre de Usuario:</label>
+                <input type="text" name="nombredeusuario" id="nombredeusuario">
+            </li>
+
+            <li> <label for="fechadenacimiento">Fecha de nacimiento:</label>
+                <input type="date" name="fechadenacimiento" id="fechadenacimiento">
+            </li>
+
+            <li> <label for="domicilio">Direccion:</label>
+                <input type="text" name="domicilio" id="domicilio">
+            </li>
+        </ul>
+        <ul>
+            <li> <label for="comprar-vender">¿Quieres comprar?</label>
+            <li> <input type="radio" name="comprar-vender" value="Comprar" checked>Comprar</li>
+            <li> <input type="radio" name="comprar-vender" value="Vender">Vender</li>
+        </ul>
+        <ul>
+            <li> <label for="categoria de interes">Categoria de interes</label>
+            <li> <input type="checkbox" name="categoriadeinteres" value="Electro">Electro</li>
+            <li> <input type="checkbox" name="categoriadeinteres" value="Moda">Moda</li>
+            <li> <input type="checkbox" name="categoriadeinteres" value="Hogar">Hogar</li>
+            <li> <input type="checkbox" name="categoriadeinteres" value="Jugueteria">Jugueteria</li>
+            <li> <input type="checkbox" name="categoriadeinteres" value="Vida Sana">vida Sana</li>
+        </ul>
+
+    </form> 
+</body>
+</html>
