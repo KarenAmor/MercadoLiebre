@@ -215,6 +215,9 @@ ul li a:hover{
     background-color: lightcoral;
 }
 
+.description {
+
+}
    
 @media screen and (max-width:650px) {
     header{
@@ -240,8 +243,14 @@ ul li a:hover{
     
 }
 @media screen and (max-width:361px) {
-.description{
-    display: none;
+    .description{
+        display: none;
+    }
 }
+
+@media (min-width:651px) {
+    section div article:hover div i {
+        transform: rotate(270deg);
+    }
 }
 
