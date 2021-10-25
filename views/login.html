@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylelogin.css">
     <title>Ingresar</title>
 </head>
-<body>
-    <form action="/login" method="POST" class="form">
-        <ul>
-            <li> <label for="nombredeusuario">Nombre de Usuario:</label>
-                <input type="text" name="nombredeusuario" id="nombredeusuario">
-                <span class="feedback"></span>
-            </li>
 
-            <li><label for="contrasena">Contraseña:</label>
-                <input type="password" name="contrasena" id="contrasena">
-                <span class="feedback"></span>
-            </li>
-        </ul>
-        <input type="submit" value="Enviar">
-    </form>
-   
+<body>
+    <section>
+        
+        <form action="/login" method="POST" class="form">
+            <div class="container">
+                <h4>Formulario de Ingreso</h4>
+            <ul>
+                <li class="ususario"> <label for="nombredeusuario">Nombre de Usuario:</label>
+                    <input type="text" name="nombredeusuario" id="nombredeusuario" minlength="2" required>
+                    <span class="feedback"></span>
+                </li>
+
+                <li><label for="contrasena">Contraseña:</label>
+                    <input type="password" name="contrasena" id="contrasena" minlength="2" required>
+                    <span class="feedback"></span>
+                </li>
+            </ul>
+            <input type="submit" value="Enviar" class="buton">
+        </div>
+        </form>
+    </section>
+
 </body>
+
 </html>

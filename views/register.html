@@ -5,47 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylelogin.css">
     <title>Formulario registro</title>
 </head>
 <body>
+   
     <form action="/register" method="POST" class="form">
+        <h4>Formulario de ingreso</h4>
         <ul>
             <li> <label for="nombreyapellido">Nombre y Apellido:</label>
-                <input type="text" name="nombreyapellido" id="nombreyapellido">
+                <input type="text" name="nombreyapellido" id="nombreyapellido" minlength="2" required>
                 <span class="feedback"></span>
             </li>
 
             <li><label for="nombredeusuario">Nombre de Usuario:</label>
-                <input type="text" name="nombredeusuario" id="nombredeusuario">
+                <input type="text" name="nombredeusuario" id="nombredeusuario" minlength="2" required>
                 <span class="feedback"></span>
             </li>
 
             <li> <label for="fechadenacimiento">Fecha de nacimiento:</label>
-                <input type="date" name="fechadenacimiento" id="fechadenacimiento">
+                <input type="date" name="fechadenacimiento" id="fechadenacimiento" minlength="2" required>
                 <span class="feedback"></span>
             </li>
 
             <li> <label for="domicilio">Direccion:</label>
-                <input type="text" name="domicilio" id="domicilio">
+                <input type="text" name="domicilio" id="domicilio" minlength="2" required>
                 <span class="feedback"></span>
             </li>
         </ul>
-        <ul>
+        <ul >
             <li> <label for="comprar-vender">¿Quieres comprar?</label>
-            <li> <input type="radio" name="comprar-vender" value="Comprar" checked>Comprar</li>
-            <li> <input type="radio" name="comprar-vender" value="Vender">Vender</li>
+            <li class="little"> <input type="radio" name="comprar-vender" value="Comprar" checked>Comprar</li>
+            <li class="little"> <input type="radio" name="comprar-vender" value="Vender">Vender</li>
         </ul>
-        <ul>
+        <ul >
             <li> <label for="categoria de interes">Categoria de interes</label>
-            <li> <input type="checkbox" name="categoriadeinteres" value="Electro">Electro</li>
-            <li> <input type="checkbox" name="categoriadeinteres" value="Moda">Moda</li>
-            <li> <input type="checkbox" name="categoriadeinteres" value="Hogar">Hogar</li>
-            <li> <input type="checkbox" name="categoriadeinteres" value="Jugueteria">Jugueteria</li>
-            <li> <input type="checkbox" name="categoriadeinteres" value="Vida Sana">vida Sana</li>
+               
+            <li class="little"> <input type="checkbox" name="categoriadeinteres" value="Electro">Electro</li>
+            <li class="little"> <input type="checkbox" name="categoriadeinteres" value="Moda">Moda</li>
+            <li class="little"> <input type="checkbox" name="categoriadeinteres" value="Hogar">Hogar</li>
+            <li class="little"> <input type="checkbox" name="categoriadeinteres" value="Jugueteria">Jugueteria</li>
+            <li class="little"> <input type="checkbox" name="categoriadeinteres" value="Vida Sana">vida Sana</li>
         </ul>
        <p>Estoy de acuerdo con <a href="#">Terminos y condiciones</a></p>
-       <input type="submit" value="Reagistrar">
+       <input type="submit" value="Reagistrar" class="buton">
        <p><a href="#">¿Ya tengo cuenta?</a></p>
 
     </form> 

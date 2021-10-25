@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
@@ -20,16 +21,13 @@ header{
 }
 div.top-header{
     padding: 5%;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    
+    width: 100%;    
 }
+
 div.top-header p .i.fas.fa-hand-holding-usd{
     font-weight: 200;
     text-align:left;
 }
-
 
 header div.logo{
     padding: 10px;
@@ -43,8 +41,23 @@ header div.form{
     align-items: center;
     display:flex;
 }
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: auto;
+    margin-right: 12px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    }
+
 header nav{
     font-size: 12px;
+    display: none;
 }
 
 header ul li{
@@ -78,10 +91,15 @@ header div.top-header p{
 }
 
 div.burger-menu{
-    display: none;
+    display: flex;
     text-align: center;
-    
+    justify-content: center;
+    width: 100%; 
+   padding-bottom: 10px; 
+   margin-top: 10px;
+     
 }
+
 
 div.burger-menu i{
     background-color: #03264c;
@@ -126,9 +144,13 @@ div.burger-menu i{
     font-weight: normal;
 }
 
-h3,
 .description{
     color: #666;
+    display: none;
+    }
+
+.products article:hover .description{
+display: block;
 }
 
 section.banner img{
@@ -143,32 +165,35 @@ main{
     align-items: center;
     bottom: 10px;
     background-color: #ebebeb;
-}
+    margin: auto;
+    padding-left: 10px;
+    }
 
 main section article{
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
-main section article img{
-    width: 100%;
+
+main h3 div.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 main section article i,
 .discount{
-    color: #39b54a;
+color: #39b54a;
+}
+main section .products article{
+    width: 100vw;
 }
 
-
-main img{
-    max-width: 80vw;
-}
-main .last-visit .products{
-    display: block;
-    text-align: center;
-}
 main .offers .products{
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 main .last-visit .products .price .discount{
     display: flex;
@@ -176,6 +201,23 @@ main .last-visit .products .price .discount{
     color: #39b54a;
     border-top: 1px solid #ebebeb;
 }
+
+main article div.on-line{
+    display: flex;
+    width: 90%;
+}
+main article div.on-line p.price{
+    width: 70%;
+}
+main article div.on-line p.discount{
+    width: 30%;
+    text-align: start;
+}
+
+main i{
+    padding-top: 15px;
+}
+
 
 footer section{
     display: flex;
@@ -194,7 +236,7 @@ footer  i{
         margin-bottom: 10px;
     }
 footer .container{display: flex;
-flex-direction: column;
+flex-direction: row;
 align-items: center;
 justify-content: center;
 }
@@ -215,33 +257,100 @@ ul li a:hover{
     background-color: lightcoral;
 }
 
-   
-@media screen and (max-width:650px) {
+   /*Celular*/
+@media screen and (min-width:320px) {
     header{
         display: flex;
         justify-content: space-around;
         flex-direction: column;
         align-items: center;
-    }
+    } */
     header nav{
         display:none;
+        width: 100%;
+        justify-content: space-between;
     }
     header ul{
         display: flex;
         justify-content: space-between;
     }
-    main section .products{
+    header ul li a{
+        justify-content: space-between;
+    } 
+    .description{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    main section{
+        display: flex;
         width: 100%;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        flex-direction: column;
     }
+    main section .products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+    main section .products article, main section .offers article{
+     max-width: 100%;
+     width: 100vw;
+     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+     margin-bottom: 10px;
+     }
     div.burger-menu{
-        display:block;       
+        display:flex;       
     }
+    nav ul li{
+        display: flex;
+        flex-direction: row;
+    } 
     
 }
-@media screen and (max-width:361px) {
-.description{
-    display: none;
-}
-}
 
+
+/*para tablets*/
+@media screen and (min-width: 768px) {
+    header{        
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+    header nav{
+        display:flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+        div.burger-menu{
+            display:none;}
+
+    main section article i:hover {        
+        transform: rotate(270deg);
+    }
+     main section .last-visit .main-article{
+        display: flex;
+        flex-direction:row-reverse;
+    }
+    div.tablet{
+        display: flex;
+        max-width: 100%;
+    }
+    footer .container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    }
+    main section .products{        
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        display: block;
+        justify-content: space-between;
+    }   
